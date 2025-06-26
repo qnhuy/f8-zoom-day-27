@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow: hidden;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(234, 240, 174);
+}
+
+.list {
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* overflow: hidden; */
+}
+
+.list .item {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #bd4545;
+    color: white;
+    text-align: center;
+    align-content: center;
+    font-size: 2rem;
+    border-radius: 10px;
+    user-select: none;
+    font-weight: 600;
+    /* translate: 10px; */
+    background: no-repeat url(https://scontent.fhan5-2.fna.fbcdn.net/v/t39.30808-6/510298961_1321734299958462_1743701617023085278_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=42OKJVRY4QAQ7kNvwHGF0PY&_nc_oc=AdkHl3g6RjkfAug9ODo4Cj2f2d_60hZAhe-poaDGRej3w2A4mGvGkQyUeEb8cU4Nzts&_nc_zt=23&_nc_ht=scontent.fhan5-2.fna&_nc_gid=Sa6_rlaDqcWzucIuR5OzjQ&oh=00_AfPu3FgvhHosN3zMyDz1loLDgYHJziJBb2nlKL2OomCQBQ&oe=68620B42);
+    background-size: cover;
+    /* opacity: 0.5; */
+    /* background-color: rgba(0, 125, 0, 0.5); */
+    cursor: pointer;
+}
+
+.react {
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    gap: 90px;
+    z-index: 10;
+}
+
+.react-item {
+    width: 70px;
+    height: 70px;
+    /* margin: 0 40px; */
+    background-color: #eeeeee;
+    border-radius: 100%;
+    align-content: center;
+    text-align: center;
+    float: inherit;
+    animation: sinkReact 0.2s linear;
+    box-shadow: 1px 1px 5px;
+}
+
+.react-item:hover {
+    animation: floatReact 0.2s linear;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.react-item.hoverd {
+    animation: floatReact 0.2s linear;
+    transform: scale(1.2);
+}
+
+.react-item__like {
+    --like-fontsize: 30px;
+    font-size: var(--like-fontsize);
+    color: #2b9e3a;
+}
+
+.react-item__dislike {
+    --dislike-fontsize: 37px;
+    color: rgb(232, 73, 55);
+    font-size: var(--dislike-fontsize);
+}
+
+@keyframes floatReact {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes sinkReact {
+    from {
+        transform: scale(1.2);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes makeGreen {
+    from {
+
+    } to {
+
+    }
+}
+
+@keyframes makeRed {
+    from {
+
+    } to {
+        
+    }
+}
