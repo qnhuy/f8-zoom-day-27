@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F8 Day 27</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            height: 100vh;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .container {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        .item a {
+            display: block;
+            text-decoration: none;
+            width: 200px;
+            height: 100px;
+            background-color: antiquewhite;
+            color: black;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 10px;
+            text-align: center;
+            align-content: center;
+            cursor: pointer;
+            animation: increase 0.3s ease;
+        }
+
+        .item a:hover {
+            scale: 0.9;
+            animation: decrease 0.3s ease;
+        }
+
+        @keyframes decrease {
+            from {
+                scale: 1;
+            } to {
+                scale: 0.9;
+            }
+        }
+
+        @keyframes increase {
+            from {
+                scale: 0.9;
+            } to {
+                scale: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="container">
+        <li class="item"><a href="./dispatch-slideshow/slideshow.html">Didpatch Slideshow</a></li>
+        <li class="item"><a href="./live-code-editor/lce.html">Live Code Studio</a></li>
+        <li class="item"><a href="./tender/tender.html">Tender</a></li>
+    </ul>
+</body>
+
+</html>
