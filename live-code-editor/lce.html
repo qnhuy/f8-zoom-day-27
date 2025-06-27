@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Code Editor</title>
+    <link rel="stylesheet" href="./lce-style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="coding-area">
+            <label for="textarea" class="html-label">
+                <h2>HTML</h2>
+            </label>
+            <textarea name="code" id="textarea" placeholder="Write your code here!"></textarea>
+        </div>
+
+        <div class="website-area">
+            <iframe id="website-preview"></iframe>></iframe>
+        </div>
+    </div>
+
+    <div class="context-modal show">
+        <ul class="context-list">
+            <li class="context-item context--select-all">Select all</li>
+            <li class="context-item context--clear">Clear code</li>
+        </ul>
+    </div>
+
+    <script src="./lce.js"></script>
+</body>
+
+</html>
