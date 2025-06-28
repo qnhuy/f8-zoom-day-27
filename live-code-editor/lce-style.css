@@ -63,7 +63,16 @@ body {
     outline: none;
 }
 
+.website-overlay {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
 #website-preview {
+    position: absolute;
     width: 100%;
     height: 100%;
     background-color: white;
